@@ -1,0 +1,963 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (43.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (44.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateBooks (20130419174931)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130419174931')[0m
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:20:03 +0100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 1854ms (Views: 635.0ms | ActiveRecord: 79.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:20:06 +0100
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:22:19 +0100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:29:22 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:29:27 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:29:37 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:29:51 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:29:59 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:30:01 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:30:05 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:34:53 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:42:11 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:42:15 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:45:17 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 19:45:21 +0100
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.erb (151.0ms)
+  Rendered books/new.html.erb within layouts/application (381.0ms)
+Completed 200 OK in 447ms (Views: 396.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:45:29 +0100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:45:36 +0100
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:45:36 +0100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 19:45:55 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (4.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 19:45:59 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (4.0ms)
+  Rendered books/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:14:46 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:14:48 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (5.0ms)
+  Rendered books/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 20:15:28 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHcWVLcRL0hewJPbP7vnXY5hI4wuodOV7ZWxux539os=", "book"=>{"title"=>"2", "description"=>"///", "price"=>"2"}, "commit"=>"Create Book"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (346.0ms)[0m  [1mINSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 19 Apr 2013 19:15:28 UTC +00:00], ["description", "///"], ["price", 2], ["title", "2"], ["updated_at", Fri, 19 Apr 2013 19:15:28 UTC +00:00]]
+  [1m[35m (12.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 370ms (ActiveRecord: 358.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-19 20:15:29 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:15:29 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:22:14 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (6.0ms)
+  Rendered books/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 20:22:31 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHcWVLcRL0hewJPbP7vnXY5hI4wuodOV7ZWxux539os=", "book"=>{"title"=>"tootoo", "description"=>"don't mess with ma", "price"=>""}, "commit"=>"Create Book"}
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 19 Apr 2013 19:22:31 UTC +00:00], ["description", "don't mess with ma"], ["price", nil], ["title", "tootoo"], ["updated_at", Fri, 19 Apr 2013 19:22:31 UTC +00:00]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/2
+Completed 302 Found in 15ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2013-04-19 20:22:31 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered books/show.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:22:31 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:30:52 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:30:57 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (4.0ms)
+  Rendered books/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 20:31:00 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHcWVLcRL0hewJPbP7vnXY5hI4wuodOV7ZWxux539os=", "book"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Book"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 19 Apr 2013 19:31:00 UTC +00:00], ["description", ""], ["price", nil], ["title", ""], ["updated_at", Fri, 19 Apr 2013 19:31:00 UTC +00:00]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/3
+Completed 302 Found in 14ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2013-04-19 20:31:00 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:31:00 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:37:21 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (5.0ms)
+  Rendered books/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 20:37:24 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHcWVLcRL0hewJPbP7vnXY5hI4wuodOV7ZWxux539os=", "book"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 19 Apr 2013 19:37:24 UTC +00:00], ["description", ""], ["price", nil], ["title", ""], ["updated_at", Fri, 19 Apr 2013 19:37:24 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/4
+Completed 302 Found in 19ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/books/4" for 127.0.0.1 at 2013-04-19 20:37:24 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:37:24 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:37:36 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:37:40 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (7.0ms)
+  Rendered books/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 20:37:42 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHcWVLcRL0hewJPbP7vnXY5hI4wuodOV7ZWxux539os=", "book"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 19 Apr 2013 19:37:42 UTC +00:00], ["description", ""], ["price", nil], ["title", ""], ["updated_at", Fri, 19 Apr 2013 19:37:42 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/5
+Completed 302 Found in 13ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2013-04-19 20:37:42 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:37:42 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:37:58 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-19 20:38:01 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/1/edit" for 127.0.0.1 at 2013-04-19 20:38:04 +0100
+Processing by BooksController#edit as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered books/_form.html.erb (6.0ms)
+  Rendered books/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/books/1" for 127.0.0.1 at 2013-04-19 20:38:09 +0100
+Processing by BooksController#update as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHcWVLcRL0hewJPbP7vnXY5hI4wuodOV7ZWxux539os=", "book"=>{"title"=>"2", "description"=>"///", "price"=>""}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  UPDATE "books" SET "price" = NULL, "updated_at" = '2013-04-19 19:38:09.433443' WHERE "books"."id" = 1
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 55ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-19 20:38:09 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-19 20:38:09 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:38:13 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 76ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:38:22 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (5.0ms)
+  Rendered books/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:38:25 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:38:37 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:38:45 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (5.0ms)
+  Rendered books/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 20:38:47 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHcWVLcRL0hewJPbP7vnXY5hI4wuodOV7ZWxux539os=", "book"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Book"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 19 Apr 2013 19:38:47 UTC +00:00], ["description", ""], ["price", nil], ["title", ""], ["updated_at", Fri, 19 Apr 2013 19:38:47 UTC +00:00]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/6
+Completed 302 Found in 13ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/books/6" for 127.0.0.1 at 2013-04-19 20:38:47 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:38:47 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:39:41 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (5.0ms)
+  Rendered books/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 20:39:43 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHcWVLcRL0hewJPbP7vnXY5hI4wuodOV7ZWxux539os=", "book"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 19 Apr 2013 19:39:43 UTC +00:00], ["description", ""], ["price", nil], ["title", ""], ["updated_at", Fri, 19 Apr 2013 19:39:43 UTC +00:00]]
+  [1m[35m (8.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/7
+Completed 302 Found in 21ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/books/7" for 127.0.0.1 at 2013-04-19 20:39:43 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:39:43 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:39:45 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (4.0ms)
+  Rendered books/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:39:47 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/books/7" for 127.0.0.1 at 2013-04-19 20:39:49 +0100
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"7"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (42.0ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 7]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books
+Completed 302 Found in 53ms (ActiveRecord: 47.0ms)
+
+
+Started DELETE "/books" for 127.0.0.1 at 2013-04-19 20:39:49 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:39:54 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (6.0ms)
+  Rendered books/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:39:56 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/books/6" for 127.0.0.1 at 2013-04-19 20:39:58 +0100
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 6]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books
+Completed 302 Found in 12ms (ActiveRecord: 6.0ms)
+
+
+Started DELETE "/books" for 127.0.0.1 at 2013-04-19 20:39:58 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started DELETE "/books/5" for 127.0.0.1 at 2013-04-19 20:39:59 +0100
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"5"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 5]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books
+Completed 302 Found in 13ms (ActiveRecord: 8.0ms)
+
+
+Started DELETE "/books" for 127.0.0.1 at 2013-04-19 20:39:59 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started DELETE "/books/4" for 127.0.0.1 at 2013-04-19 20:40:00 +0100
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"4"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 4]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books
+Completed 302 Found in 25ms (ActiveRecord: 9.0ms)
+
+
+Started DELETE "/books" for 127.0.0.1 at 2013-04-19 20:40:00 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:40:01 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (9.0ms)
+  Rendered books/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:40:03 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 20:40:07 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (4.0ms)
+  Rendered books/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 20:40:09 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"68Y4sIXrDWOX5MN74mFOYP6kV2FIWiFw1Jz7+Uht1O4=", "book"=>{"title"=>"", "description"=>"", "price"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 19 Apr 2013 19:40:09 UTC +00:00], ["description", ""], ["price", nil], ["title", ""], ["updated_at", Fri, 19 Apr 2013 19:40:09 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/8
+Completed 302 Found in 14ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/books/8" for 127.0.0.1 at 2013-04-19 20:40:09 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:40:09 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/books/8" for 127.0.0.1 at 2013-04-19 20:49:21 +0100
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"8"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 8]]
+  [1m[35m (27.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books
+Completed 302 Found in 34ms (ActiveRecord: 29.0ms)
+
+
+Started DELETE "/books" for 127.0.0.1 at 2013-04-19 20:49:21 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started DELETE "/books/3" for 127.0.0.1 at 2013-04-19 20:49:22 +0100
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"3"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 3]]
+  [1m[35m (5.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books
+Completed 302 Found in 13ms (ActiveRecord: 9.0ms)
+
+
+Started DELETE "/books" for 127.0.0.1 at 2013-04-19 20:49:22 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 20:49:29 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 21:35:34 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 21:35:35 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (6.0ms)
+  Rendered books/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-19 21:35:59 +0100
+Processing by BooksController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RpP2GAgY1XbpX4LNQ67S6PU6ndrYnl/D4jEd8gXGZQs=", "book"=>{"title"=>"boohoo", "description"=>"lishjefkashfhase,rhwuheru,kaWEHDR", "price"=>"55"}, "commit"=>"Create Book"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "books" ("created_at", "description", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 19 Apr 2013 20:35:59 UTC +00:00], ["description", "lishjefkashfhase,rhwuheru,kaWEHDR"], ["price", 55], ["title", "boohoo"], ["updated_at", Fri, 19 Apr 2013 20:35:59 UTC +00:00]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/9
+Completed 302 Found in 13ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/books/9" for 127.0.0.1 at 2013-04-19 21:35:59 +0100
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 21:36:00 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/books/1" for 127.0.0.1 at 2013-04-19 21:36:08 +0100
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"1"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "books" WHERE "books"."id" = ?  [["id", 1]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books
+Completed 302 Found in 14ms (ActiveRecord: 8.0ms)
+
+
+Started DELETE "/books" for 127.0.0.1 at 2013-04-19 21:36:08 +0100
+
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 21:36:16 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-19 22:10:51 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-19 22:10:53 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (5.0ms)
+  Rendered books/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-21 16:19:19 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (116.0ms)
+Completed 200 OK in 1375ms (Views: 477.0ms | ActiveRecord: 76.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-21 16:19:41 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (16.0ms)
+  Rendered books/new.html.erb within layouts/application (133.0ms)
+Completed 200 OK in 148ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-21 16:19:46 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-21 16:20:12 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-21 16:20:48 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2013-04-21 16:20:56 +0100
+Processing by BooksController#new as */*
+  Rendered books/_form.html.erb (4.0ms)
+  Rendered books/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-21 16:21:08 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-21 16:24:16 +0100
+Processing by BooksController#index as */*
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-21 16:31:42 +0100
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms)
