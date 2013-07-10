@@ -1,0 +1,15 @@
+<h1>Books</h1>
+
+
+ <%= render partial: 'books/table', collection: @books, :as => :books %>
+   
+ <%= form_tag(books_url, method: :get) do %>
+    <%= text_field_tag :search_string %>
+    <%= submit_tag 'search' %>
+  <% end %>
+   
+
+<%= link_to 'New Book', new_book_path %>
+
+
+

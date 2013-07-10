@@ -1,0 +1,25 @@
+<table class="table">
+  <tr>
+   
+    <th><%= sortable "title" %></th>
+    <th><%= sortable "description" %></th>
+    <th><%= sortable "price" %></th>
+    <th>Image</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @books.each do |book| %>
+  <tr>
+    <td><%= book.title %></td>
+    <td><%= book.description %></td>
+    <td><%= book.price %></td>
+    <td><%= book.image %><%= link_to image_tag("Books/" + book.id.to_s + ".jpg", :size => "120x160"), book %></div></td>
+    <td><%= link_to 'Show', book %></td>
+    <td><%= link_to 'Edit', edit_book_path(book) %></td>
+    <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
